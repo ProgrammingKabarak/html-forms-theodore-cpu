@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration / Service Request Form</title>
+</head>
+<body>
+
+    <h1>Company Registration / Service Request Form</h1>
+
+    <form method="post" action="#">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required
+                    minlength="3"
+                    maxlength="50"
+                    pattern="[A-Za-z ]+">
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    pattern="[0-9]{10,15}">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Company Information -->
+        <fieldset>
+            <legend>Company Information</legend>
+
+            <p>
+                <label for="companyname">Company Name:</label><br>
+                <input
+                    type="text"
+                    id="companyname"
+                    name="companyname"
+                    required
+                    minlength="2"
+                    maxlength="60">
+            </p>
+
+            <p>
+                <label for="website">Company Website:</label><br>
+                <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    required>
+            </p>
+
+            <p>
+                <label for="size">Company Size:</label><br>
+                <select id="size" name="size" required>
+                    <option value="">--Select Company Size--</option>
+                    <option value="1-10">1 - 10 Employees</option>
+                    <option value="11-50">11 - 50 Employees</option>
+                    <option value="51-200">51 - 200 Employees</option>
+                    <option value="201-500">201 - 500 Employees</option>
+                    <option value="500+">500+ Employees</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="industry">Industry:</label><br>
+                <input
+                    type="text"
+                    id="industry"
+                    name="industry"
+                    required
+                    minlength="3"
+                    maxlength="40">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Service Request -->
+        <fieldset>
+            <legend>Service Request</legend>
+
+            <p>Service Type:</p>
+
+            <input type="radio" id="webdev" name="service" value="Web Development" required>
+            <label for="webdev">Web Development</label><br>
+
+            <input type="radio" id="consulting" name="service" value="Consulting">
+            <label for="consulting">Consulting</label><br>
+
+            <input type="radio" id="support" name="service" value="Technical Support">
+            <label for="support">Technical Support</label>
+
+            <p>Preferred Contact Method:</p>
+
+            <input type="checkbox" id="emailcontact" name="contactmethod" value="Email">
+            <label for="emailcontact">Email</label><br>
+
+            <input type="checkbox" id="phonecontact" name="contactmethod" value="Phone">
+            <label for="phonecontact">Phone</label><br>
+
+            <input type="checkbox" id="smscontact" name="contactmethod" value="SMS">
+            <label for="smscontact">SMS</label>
+
+            <p>
+                <label for="appointmentdate">Appointment Date:</label><br>
+                <input
+                    type="date"
+                    id="appointmentdate"
+                    name="appointmentdate"
+                    required
+                    min="2025-01-01"
+                    max="2030-12-31">
+            </p>
+
+            <p>
+                <label for="appointmenttime">Appointment Time:</label><br>
+                <input
+                    type="time"
+                    id="appointmenttime"
+                    name="appointmenttime"
+                    required>
+            </p>
+
+            <p>
+                <label for="budget">Budget Range (USD):</label><br>
+                <input
+                    type="number"
+                    id="budget"
+                    name="budget"
+                    required
+                    min="100"
+                    max="100000">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Message and Agreement -->
+        <fieldset>
+            <legend>Message and Agreement</legend>
+
+            <p>
+                <label for="message">Additional Information:</label><br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    minlength="10"
+                    maxlength="500"
+                    required></textarea>
+            </p>
+
+            <p>
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    required>
+
+                <label for="terms">
+                    I agree to the Terms and Conditions
+                </label>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
