@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Registration Form</title>
+</head>
+<body>
+
+    <h1>University Student Registration Form</h1>
+
+    <form>
+
+        <h2>Personal Information</h2>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="nationality">Nationality:</label><br>
+        <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality">
+
+        <h2>Contact Information</h2>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com"><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678"><br><br>
+
+        <label for="address">Home Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your home address"></textarea>
+
+        <h2>Academic Information</h2>
+
+        <label for="studentid">Student ID Number:</label><br>
+        <input type="text" id="studentid" name="studentid" placeholder="Enter student ID"><br><br>
+
+        <label for="faculty">Faculty/School:</label><br>
+        <select id="faculty" name="faculty">
+            <option value="">--Select Faculty--</option>
+            <option>School of Computing</option>
+            <option>School of Engineering</option>
+            <option>School of Business</option>
+            <option>School of Medicine</option>
+            <option>School of Education</option>
+        </select>
+
+        <br><br>
+
+        <label for="department">Department:</label><br>
+        <input type="text" id="department" name="department" placeholder="Enter department"><br><br>
+
+        <label for="course">Course of Study:</label><br>
+        <input type="text" id="course" name="course" placeholder="Enter your course"><br><br>
+
+        <label for="year">Year of Study:</label><br>
+        <select id="year" name="year">
+            <option value="">--Select Year--</option>
+            <option>Year 1</option>
+            <option>Year 2</option>
+            <option>Year 3</option>
+            <option>Year 4</option>
+            <option>Year 5</option>
+        </select>
+
+        <h2>Account Information</h2>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Create a username"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm" placeholder="Confirm password"><br><br>
+
+        <h2>Terms and Conditions</h2>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">
+            I agree to the terms and conditions of the university.
+        </label>
+
+        <br><br>
+
+        <button type="submit">Submit Registration</button>
+
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
+```
